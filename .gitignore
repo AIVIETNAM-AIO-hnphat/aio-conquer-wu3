@@ -1,0 +1,43 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.python-version
+
+
+# Virtual environments
+.venv
+# --- Data & Artifacts (From Team Checklist) ---
+data/raw/
+data/processed/
+*.npy
+*.pkl
+*.csv
+uv.lock
+
+# --- Python & Environments ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.python-version
+pyproject.toml
+
+# --- Build & Distribution ---
+dist/
+build/
+*.egg-info/
+
+# --- Tools & Tracking ---
+wandb/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+.DS_Store
