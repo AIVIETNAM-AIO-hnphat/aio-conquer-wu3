@@ -1,0 +1,3 @@
+touch src/.gitkeep
+touch data/.gitkeep
+touch logs/.gitkeep
