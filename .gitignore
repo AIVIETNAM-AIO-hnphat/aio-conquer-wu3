@@ -17,6 +17,7 @@ data/processed/
 *.pkl
 *.csv
 uv.lock
+apikeys/
 
 # --- Python & Environments ---
 .venv/
