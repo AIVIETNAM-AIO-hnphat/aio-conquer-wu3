@@ -521,14 +521,10 @@ def b8_concat_and_export(
 # RUN PIPELINE
 def run_pipeline(cfg: PipelineConfig) -> Dict[str, Dict[str, np.ndarray]]:
     """
-    Thực thi toàn bộ pipeline B1–B8 theo thứ tự cố định.
-
+    Thực thi toàn bộ pipeline B1–B8 theo thứ tự cố định
     Thứ tự sau fix:
-        B1 -> B2a (clip) -> B3 -> B4 -> B5 (split)
-        -> B2b (IQR train-only) -> B6 -> B7 -> B8
-
-    IQR detection được tách thành 2 hàm và đẩy xuống sau split để bounds
-    chỉ học từ train, không leak từ val/test
+        B1 -> B2a (clip) -> B3 -> B4 -> B5 (split) -> B2b (IQR train-only) -> B6 -> B7 -> B8
+    IQR detection được tách thành 2 hàm và đẩy xuống sau split để bounds chỉ học từ train, không leak từ val/test
 
     Args:
         cfg : cấu hình pipeline
